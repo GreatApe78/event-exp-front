@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Work+Sans&display=swap');
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: 'Dancing Script', cursive;
+	font-family: 'Work Sans', sans-serif;
+}
+header{
+    box-shadow: 10px 10px 24px -6px rgba(0,0,0,0.75);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.connect-wallet-btn {
+    padding: 4px;
+    border-radius: 4px;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	background-color: #eba6b1;
+	width: 12rem;
+    cursor: pointer;
+	transition: all 0.3s;
+}
+.connect-wallet-btn:hover{
+	background-color: #fabdc7;
+}
+.connect-wallet-btn img {
+	width: 40px;
+}
+main{
+	height: 70vh;
+	display: flex;
+	align-items: center;
+}
+.intro-message{
+	max-width: 27rem;
+	margin: 0 auto;
+}
+.intro-message h1{
+	color: #8e2241;
+}
+.intro-message button{
+	cursor: pointer;
+	padding: 20px;
+	font-size: 25px;
+	border-color: #69e1b9;
+	background-color:#69e1b9 ;
+	border-radius: 4px;
+	transition: all 0.3s;
+}
+.intro-message button:hover{
+	background-color:#81fad1 ;
+}
+.loading-p{
+	display: none;
+	text-align: center;
+}
+.loading-pc{
+	display: none;
+	text-align: center;
+}
+.checkin-nft-btn{
+	cursor: pointer;
+	padding: 20px;
+	font-size: 25px;
+	border-color: #d33c58;
+	background-color:#d33c58 ;
+	border-radius: 4px;
+	transition: all 0.3s;
+}
+.checkin-nft-btn:hover{
+	background-color: #f5798f;
+}
+@media screen and (max-width: 777px) {
+	header {
+		flex-direction: column; /* Stack elements vertically */
+		justify-content: center; /* Center items vertically */
+		align-items: center; /* Center items horizontally */
+	}
+	
+	.connect-wallet-btn {
+		margin-top: 1rem; /* Add some spacing between elements */
+	}
+}
