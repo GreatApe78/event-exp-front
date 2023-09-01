@@ -1,7 +1,7 @@
 import { hasChecked } from "./api-calls/has-checked.js";
 import { connectWalletBtn, connectedAddressSpan, retrieveNftBtn ,nftImage, checkInBtn} from "./dom-elements.js";
 import { handleCheckIn } from "./event-handlers/handle-checkin.js";
-import { handleMint } from "./event-handlers/handle-mint.js";
+import { addToken, handleMint } from "./event-handlers/handle-mint.js";
 import { reloadConnectedAccount } from "./event-handlers/reload-connected-account.js";
 import { connectWallet,getConnectedAccount } from "./metamask-connection/connect-wallet.js";
 import { shortenEthereumAddress } from "./utils/shorter-address.js";
@@ -13,7 +13,6 @@ export async function loadImage(){
     console.log(checked)
         nftImage.src = checked.hasChecked? "https://ipfs.moralis.io:2053/ipfs/QmSVBPw3ZBzGGvGGRCjk31PZPFHF9CzGiaqRTpDCCaCh37/after.png":"https://ipfs.moralis.io:2053/ipfs/QmSVBPw3ZBzGGvGGRCjk31PZPFHF9CzGiaqRTpDCCaCh37/before.png"
 }
-
 //let eventesseExperience 
 if(window.ethereum){
     loadImage()
